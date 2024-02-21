@@ -15,6 +15,17 @@ reverse(""); // ""
 
 function reverse(str) {
   // Your code here 
+  //string length === to 0 base case 
+  let stringArr = str.split('')
+  if (stringArr.length ===  0) {
+    return ''
+  }
+  let newWord = stringArr.pop()
+  console.log(newWord)
+  return newWord + reverse(stringArr.join(''))
+
+  ///recursive function 
+  // string.pop
 }
 
 
